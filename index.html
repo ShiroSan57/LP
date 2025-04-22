@@ -1,15 +1,152 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>レスポンシブ画像ABC</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Run Forward – Fitness Gear</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .benefit-box {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+
+    .product-details {
+      max-width: 400px;
+    }
+
+    .cta {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .cta button {
+      background: #ff6a00;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #e85c00;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .product {
+        flex-direction: column;
+      }
+
+      .benefits {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="image-container">
-    <img src="1.png" alt="サンプル画像">
-    <img src="2.png" alt="サンプル画像">
-  </div>
+
+  <header>
+    <h1>RUN FORWARD</h1>
+    <p>走ることが、もっと楽しくなる – 軽くて、速くて、あなたらしく。</p>
+  </header>
+
+  <section class="section">
+    <h2 style="text-align: center;">ランニングのメリット</h2>
+    <div class="benefits">
+      <div class="benefit-box">
+        🧠 <h3>メンタル強化</h3>
+        <p>ストレス軽減 & 気分アップ。</p>
+      </div>
+      <div class="benefit-box">
+        💪 <h3>全身運動</h3>
+        <p>カロリー燃焼 & 筋肉トレーニング。</p>
+      </div>
+      <div class="benefit-box">
+        ❤️ <h3>心臓にやさしい</h3>
+        <p>心肺機能を向上させる効果。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align: center;">おすすめアイテム</h2>
+    <div class="product">
+      <img src="https://cdn.mos.cms.futurecdn.net/S9CSpUrkyQpJLkBvtYU2Sk-970-80.jpg.webp" alt="Running Watch">
+      <div class="product-details">
+        <h3>RUNXPro スマートバンド</h3>
+        <p>心拍数・距離・カロリーを一括管理。スリムで軽量。毎日のランをもっと便利に！</p>
+        <p><strong>価格:</strong> ¥6,800（税込）<br>送料無料 🎉</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>さあ、走り出そう。</h2>
+    <p>今すぐ購入して、新しいライフスタイルをスタート！</p>
+    <button>購入する</button>
+  </section>
+
 </body>
 </html>
